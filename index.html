@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="german">
+<head>
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>ITMD-541 Lab-3 Nikhil Chowdary B</h2><br> 
+        <h3>I am using chinese Language for this Tip Calculator</h3>
+        <h1>小费计算器</h1>
+        <form id="tipform">
+            <div class="form-group">
+                <label for="billTotal">账单总计:</label>
+                <input type="text" id="billTotal" name="billTotal" placeholder="Enter Bill Amount" required>
+            </div><br>
+            <div class="form-group">
+                <label for="tip">提示:</label>
+                <input type="range" id="tip" min="0" max="100">
+            </div><br>
+            <div class="form-group">
+                <label for="tipPercentage">小费百分比:</label>
+                <input type="text" id="tipPercentage" disabled>
+            </div><br>
+            <div class="form-group">
+                <label for="tipAmount">蒂帕蒙特:</label>
+                <input type="text" id="tipAmount" name="tipAmount" disabled>
+            </div><br>
+            <div class="form-group">
+                <label for="totalBillwithtip">带小费的账单总额:</label>
+                <input type="text" id="totalBillwithtip" disabled>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
